@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
-import styled from 'styled-components'
-import { Body } from './body'
-import { Footer } from './footer'
-import { Header } from './header'
+import React, { Component } from 'react';
+import styled from 'styled-components';
+import { Body } from './body';
+import { Footer } from './footer';
+import { Header } from './header';
 
 /**
  * ApplicationComponent
@@ -12,13 +12,13 @@ import { Header } from './header'
  * @returns
  */
 function ApplicationComponent({ children, className }) {
-    return (
-        <div className={className}>
-            <Header />
-            <Body>{children}</Body>
-            <Footer />
-        </div>
-    )
+  return (
+    <div className={className}>
+      <Header />
+      <Body>{children}</Body>
+      <Footer />
+    </div>
+  );
 }
 
 /**
@@ -26,7 +26,7 @@ function ApplicationComponent({ children, className }) {
  * @type {Component}
  */
 export const Application = styled(ApplicationComponent)`
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-`
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+`;

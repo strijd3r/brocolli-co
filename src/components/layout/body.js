@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import styled from 'styled-components'
+import React, { Component } from 'react';
+import styled from 'styled-components';
 
 /**
  * BodyComponent
@@ -9,9 +9,7 @@ import styled from 'styled-components'
  * @returns
  */
 function BodyComponent({ children, className }) {
-    return (
-        <section className={className}>{children}</section>
-    )
+  return <section className={className}>{children}</section>;
 }
 
 /**
@@ -19,5 +17,5 @@ function BodyComponent({ children, className }) {
  * @type {Component}
  */
 export const Body = styled(BodyComponent)`
-flex: 1;
-`
+  flex: 1;
+`;

@@ -10,10 +10,10 @@ ReactDOM.render(
 );
 
 /**
- * 
+ * reportWebVitals 
  * @param {Function} onPerfEntry Object containing the metadata for the onPerEntry event
  */
- function reportWebVitals(onPerfEntry) {
+function reportWebVitals(onPerfEntry) {
   if (onPerfEntry && onPerfEntry instanceof Function) {
     import('web-vitals').then(({ getCLS, getFID, getFCP, getLCP, getTTFB }) => {
       getCLS(onPerfEntry);
@@ -23,9 +23,9 @@ ReactDOM.render(
       getTTFB(onPerfEntry);
     });
   }
-};
+}
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+reportWebVitals(console.log);

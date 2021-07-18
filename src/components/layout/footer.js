@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
-import { darken } from 'polished'
-import styled from 'styled-components'
+import React, { Component } from 'react';
+import { darken } from 'polished';
+import styled from 'styled-components';
 
 /**
  * FooterComponent
@@ -10,9 +10,7 @@ import styled from 'styled-components'
  * @returns
  */
 function FooterComponent({ children, className }) {
-    return (
-        <footer className={className}>{children}</footer>
-    )
+  return <footer className={className}>{children}</footer>;
 }
 
 /**
@@ -20,14 +18,14 @@ function FooterComponent({ children, className }) {
  * @type {Component}
  */
 export const Footer = styled(FooterComponent)`
-height: 4rem;
-background: ${props => props.theme.primaryBg};
-color: ${props => props.theme.primary};
-box-shadow: 5px 5px 0 ${props => darken(0.1, props.theme.primaryBg)};
-`
+  height: 4rem;
+  background: ${(props) => props.theme.primaryBg};
+  color: ${(props) => props.theme.primary};
+  box-shadow: 5px 5px 0 ${(props) => darken(0.1, props.theme.primaryBg)};
+`;
 Footer.defaultProps = {
-    theme: {
-        primary: "#000000",
-        primaryBg: "#FFFFFF",
-    }
-}
+  theme: {
+    primary: '#000000',
+    primaryBg: '#FFFFFF',
+  },
+};
