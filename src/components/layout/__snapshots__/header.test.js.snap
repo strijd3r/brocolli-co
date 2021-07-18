@@ -1,10 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders div and its children 1`] = `
+.c1 {
+  height: 4rem;
+}
+
+.c0 {
+  height: 4rem;
+  background: #FFFFFF;
+  color: #000000;
+  border: 2px solid #e6e6e6;
+  box-shadow: 5px 5px 0 #e6e6e6;
+}
+
 <header
-  class=""
+  class="c0"
 >
   <img
+    class="c1"
     src="header.logo.svg"
   />
   testing react header

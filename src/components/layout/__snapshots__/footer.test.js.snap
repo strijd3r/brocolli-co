@@ -3,7 +3,9 @@
 exports[`renders div and its children 1`] = `
 .c0 {
   height: 4rem;
-  box-shadow: 5px 5px 0 darken(,5%);
+  background: #FFFFFF;
+  color: #000000;
+  box-shadow: 5px 5px 0 #e6e6e6;
 }
 
 <footer

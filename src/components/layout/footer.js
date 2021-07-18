@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { darken } from 'polished'
 import styled from 'styled-components'
 
 /**
@@ -22,5 +23,11 @@ export const Footer = styled(FooterComponent)`
 height: 4rem;
 background: ${props => props.theme.primaryBg};
 color: ${props => props.theme.primary};
-box-shadow: 5px 5px 0 darken(${props => props.theme.primaryBg}, 5%);
+box-shadow: 5px 5px 0 ${props => darken(0.1, props.theme.primaryBg)};
 `
+Footer.defaultProps = {
+    theme: {
+        primary: "#000000",
+        primaryBg: "#FFFFFF",
+    }
+}

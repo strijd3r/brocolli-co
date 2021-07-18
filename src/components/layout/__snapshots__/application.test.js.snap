@@ -1,13 +1,33 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders div and its children 1`] = `
-.c1 {
+.c3 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
+.c4 {
+  height: 4rem;
+  background: #FFFFFF;
+  color: #000000;
+  box-shadow: 5px 5px 0 #e6e6e6;
+}
+
+.c2 {
+  height: 4rem;
+}
+
+.c1 {
+  height: 4rem;
+  background: #FFFFFF;
+  color: #000000;
+  border: 2px solid #e6e6e6;
+  box-shadow: 5px 5px 0 #e6e6e6;
+}
+
 .c0 {
+  height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -21,22 +41,20 @@ exports[`renders div and its children 1`] = `
   class="c0"
 >
   <header
-    class=""
+    class="c1"
   >
     <img
+      class="c2"
       src="header.logo.svg"
     />
-    header
   </header>
   <section
-    class="c1"
+    class="c3"
   >
     testing react body
   </section>
   <footer
-    class=""
-  >
-    footer
-  </footer>
+    class="c4"
+  />
 </div>
 `;

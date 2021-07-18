@@ -35,8 +35,8 @@ export const Header = styled(HeaderComponent)`
     height: 4rem;
     background: ${props => props.theme.primaryBg};
     color: ${props => props.theme.primary};
-    border: 2px solid ${props => darken(props.theme.primaryBg)};
-    box-shadow: 5px 5px 0 ${props => darken(props.theme.primaryBg)};
+    border: 2px solid ${props => darken(0.1, props.theme.primaryBg)};
+    box-shadow: 5px 5px 0 ${props => darken(0.1, props.theme.primaryBg)};
 `
 
 Header.defaultProps = {
