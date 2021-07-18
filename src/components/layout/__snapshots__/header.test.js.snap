@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders div and its children 1`] = `
+<header
+  class=""
+>
+  <img
+    src="header.logo.svg"
+  />
+  testing react header
+</header>
+`;

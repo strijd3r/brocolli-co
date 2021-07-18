@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders div and its children 1`] = `
+.c0 {
+  height: 4rem;
+  box-shadow: 5px 5px 0 darken(,5%);
+}
+
+<footer
+  class="c0"
+>
+  testing react footer
+</footer>
+`;
